@@ -1,14 +1,14 @@
 [project]
 name = "man2man"
 version = "1.0.0"
-description = "Convert man pages to structured JSON format"
+description = "Convert man pages to structured JSON manifest format"
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
 authors = [
-    { name = "man2man contributors" }
+    { name = "Eric Fitzgerald, Claude Code" }
 ]
-keywords = ["man", "manpage", "json", "cli", "documentation"]
+keywords = ["man", "manpage", "json", "manifest", "cli", "documentation"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
@@ -32,9 +32,9 @@ dependencies = [
 man2man = "man2man:main"
 
 [project.urls]
-Homepage = "https://github.com/yourusername/man2man"
-Repository = "https://github.com/yourusername/man2man"
-Issues = "https://github.com/yourusername/man2man/issues"
+Homepage = "https://github.com/ericfitz/man2man"
+Repository = "https://github.com/ericfitz/man2man"
+Issues = "https://github.com/ericfitz/man2man/issues"
 
 [build-system]
 requires = ["hatchling"]
