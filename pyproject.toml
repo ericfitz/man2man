@@ -1,0 +1,47 @@
+[project]
+name = "man2man"
+version = "1.0.0"
+description = "Convert man pages to structured JSON format"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "man2man contributors" }
+]
+keywords = ["man", "manpage", "json", "cli", "documentation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+]
+
+[project.scripts]
+man2man = "man2man:main"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/man2man"
+Repository = "https://github.com/yourusername/man2man"
+Issues = "https://github.com/yourusername/man2man/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
